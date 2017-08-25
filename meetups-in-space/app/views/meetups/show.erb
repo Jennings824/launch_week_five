@@ -1,0 +1,21 @@
+<h1><%= @specific_meetup.name %></h1>
+
+
+<ul>
+  <li><%= @specific_meetup.description %></li>
+  <li><%= @specific_meetup.location %></li>
+  <li><%= @specific_meetup.creator %></li>
+</ul>
+
+<form class="join-form" action="/meetups/<%= @id %>" method="post">
+  <input class="join-button" type="submit" value="Join Meetup">
+</form>
+
+<h3>Attendees</h3>
+
+
+<ul>
+  <% @attendees.each do |attendee| %>
+  <li><%= attendee.username %>  <img src='<%= attendee.avatar_url %>' width="70" height="70"></li>
+  <% end %>
+</ul>

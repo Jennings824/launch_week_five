@@ -1,0 +1,13 @@
+INSERT INTO movies (title, year, category_id) VALUES ('Alien', 1979, 4);
+INSERT INTO movies (title, year, category_id) VALUES ('Jurassic Park', 1993, 1);
+INSERT INTO movies (title, year, category_id) VALUES ('Blade Runner', 1982, 5);
+INSERT INTO movies (title, year, category_id) VALUES ('Star Wars', 1973, 5);
+INSERT INTO movies (title, year, category_id) VALUES ('Donnie Brasko', 1997, 3);
+INSERT INTO movies (title, year, category_id) VALUES ('Wedding Crashers', 2005, 2);
+INSERT INTO movies (title, year, category_id) VALUES ('Shanghai Knights', 2005, 1);
+INSERT INTO movies (title, year, category_id) VALUES ('Hitchhikers Guide to the Galaxy', 2005, 5);
+INSERT INTO categories (category) VALUES ('Action');
+INSERT INTO categories (category) VALUES ('Comedy');
+INSERT INTO categories (category) VALUES ('Drama');
+INSERT INTO categories (category) VALUES ('Horror');
+INSERT INTO categories (category) VALUES ('Sci-Fi');

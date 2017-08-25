@@ -1,0 +1,11 @@
+
+    <ul>
+      <% @movies.each do |movie| %>
+      <li><a href=/movies/<%= movie["id"] %>  target="_blank"><%= movie["title"] %></a></br>
+        Year Released: <%= movie["year"] %></br>
+        Rating: <%= movie["rating"] %></br>
+        Genre: <%= movie["genre"]%></br>
+        Studio: <%=  movie["studio"]  %></br>
+      </li>
+      <% end %>
+    </ul>

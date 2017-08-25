@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cast</title>
+  </head>
+
+  <body>
+    <h1><%= @cast[0]["title"] %></br></h1>
+    <h2><%= @cast[0]["synopsis"] %></h2></br>
+    <h4><%= @cast[0]["genre"] %><h4></br>
+    <h4><%= @cast[0]["studio"] %><h4></br>
+    <h4><%= @cast[0]["year"] %><h4></br>
+    <h4><%= @cast[0]["rating"] %><h4></br>
+    <ul>
+      <%  @cast.each do |member|%>
+        <a href=/actors/<%= member["actor_id"] %>  target="_blank"><%= member["actor"] %></a>
+        :<%= member["character"] %></br>
+      <% end %>
+    </ul>
+
+  </body>
+</html>
